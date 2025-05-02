@@ -1,0 +1,12 @@
+#include <stdio.h>
+//输入一个正整数，逆序打印这个正整数的每一位
+int main() {
+    int a=0;
+
+    scanf_s("%d" , &a);
+    while (a != 0) {
+        printf("%d ",a%10);
+    a=a/10;
+    }
+    return 0;
+}
